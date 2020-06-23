@@ -1,6 +1,6 @@
 ---
 title: "First Gatsby Blog Post"
-date: "2020-06-22"
+date: "2020-06-21"
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
