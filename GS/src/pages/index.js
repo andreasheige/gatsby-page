@@ -4,8 +4,10 @@ import Layout from '../components/layout';
 const Index = () => {
   return (
     <Layout>
-      <h1>Home Page</h1>
-      <h2>Andreas Heige YAOU!</h2>
+      <h1>Andreas Heige</h1>
+      <h2>Content text will come here...</h2>
+      <h3>Sooner or later</h3>
+      <p>...</p>
     </Layout>
   )
 };
