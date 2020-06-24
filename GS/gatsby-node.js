@@ -1,5 +1,8 @@
+const path = require('path');
+
 exports.onCreateNode = ({ node }) => {
     if (node.internal.type === 'MarkdownRemark') {
-        console.log(JSON.stringify(node, null, 4))
+        const slug = path.basename(node.fileAbsolutePath, '.md')
+        console.log(slug)
     }
 };
