@@ -1,11 +1,32 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 
-const BlogPost = () => {
+export const query = graphql`
+query($slug: String!) {
+    markdownRemark(fields: {slug: { eq: $slug } }) {
+        frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+        }
+        timeToRead
+        html
+    }
+}
+`
+const BlogPost = props => {
     return (
         <Layout>
-            <div>This is the SPT</div>
+            <div>
+                <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+                <span>
+                    Posted in {props.data.markdownRemark.frontmatter.date}{" "}
+                    <span> / </span> {props.data.markdownRemark.timeToRead} min read
+                </span>
+                <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
+                </div>
+            </div>
         </Layout>
     )
 };
