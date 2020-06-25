@@ -1,6 +1,6 @@
 ---
 title: "003 Blog Post"
-date: "2020-06-22"
+date: "2020-06-25"
 featured: "../img/glommen-01.jpg"
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
