@@ -7,7 +7,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ## Excepturi maxime
 
-reprehenderit accusamus, explicabo eligendi necessitatibus soluta! Ipsam mollitia alias temporibus dicta
+reprehenderit accusamus, explicabo eligendi necessitatibus soluta! 
+
+![graff-01](../img/graff-01.png)
+
+Ipsam mollitia alias temporibus dicta
+
+![graff-02](../img/graff-02.jpg)
 
 1. omnis earum nobis
 2. architecto, quia
