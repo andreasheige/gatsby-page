@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
+import postStyles from '../templates/blogPost.module.scss'
 
 export const query = graphql`
 query($slug: String!) {
@@ -26,15 +27,16 @@ query($slug: String!) {
 const BlogPost = props => {
     return (
         <Layout>
-            <div>
+            <div className={postStyles.content}>
                 <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-                <span>
+                <span className={postStyles.meta}>
                     Posted in {props.data.markdownRemark.frontmatter.date}{" "}
                     <span> / </span> {props.data.markdownRemark.timeToRead} min read
                 </span>
                 {
                     props.data.markdownRemark.frontmatter.featured && (
                         <Img
+                        className={postStyles.featured}
                         fluid={
                             props.data.markdownRemark.frontmatter.featured.childImageSharp.fluid
                         }
