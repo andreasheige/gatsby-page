@@ -1,6 +1,7 @@
 ---
 title: "First Gatsby Blog Post"
 date: "2020-06-21"
+featured: "../img/graff-01.png"
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
