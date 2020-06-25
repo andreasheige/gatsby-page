@@ -1,7 +1,7 @@
 ---
-title: "First Gatsby Blog Post"
+title: "001 Blog Post"
 date: "2020-06-21"
-featured: "../img/graff-01.png"
+featured: "../img/post-01.png"
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -9,8 +9,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 ## Excepturi maxime
 
 reprehenderit accusamus, explicabo eligendi necessitatibus soluta! 
-
-![graff-01](../img/graff-01.png)
 
 Ipsam mollitia alias temporibus dicta
 
