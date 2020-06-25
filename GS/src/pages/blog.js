@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 
@@ -14,6 +15,13 @@ const Blog = () => {
                             frontmatter {
                                 title
                                 date(formatString: "DD MMMM, YYYY")
+                                featured {
+                                    childImageSharp {
+                                        fluid(maxWidth: 750) {
+                                            ...GatsbyImageSharpFluid
+                                        }
+                                    }
+                                }
                             }
                             id
                             fields {
@@ -43,6 +51,13 @@ const Blog = () => {
                                     {edge.node.timeToRead} min read
                                 </span>
                             </div>
+                            {edge.node.frontmatter.featured && (
+                                <Img
+                                fluid={edge.node.frontmatter.featured.childImageSharp.fluid}
+                                alt={edge.node.frontmatter.title}
+                                />
+                            )
+                        }
                             <p>{edge.node.excerpt}</p>
                             <div>
                                 <Link to={`/blog/${edge.node.fields.slug}/`}>Read more</Link>
