@@ -1,0 +1,27 @@
+.h1 {
+    color: #000;
+    font-weight: 300;
+}
+
+.linklist {
+    list-style: none;
+    font-weight: 500;
+}
+
+.linkitem {
+    padding-bottom: 10px;
+    text-decoration: none;
+    & a {
+        color: darken($color: #000000, $amount: 0);
+        padding: 0 0 0 3rem;
+        text-decoration: none;
+        text-transform: lowercase;
+        font-weight: 400;
+        font-size: medium;
+        cursor: pointer;
+        letter-spacing: 1rem;
+         a:hover{
+            text-decoration: line-through;
+        }
+    }   
+}
